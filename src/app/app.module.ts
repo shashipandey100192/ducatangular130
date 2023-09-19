@@ -7,12 +7,18 @@ import { AboutComponent } from './about/about.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
+import { LandingpageComponent } from './landingpage/landingpage.component';
+import { MynavbarComponent } from './mynavbar/mynavbar.component';
+import { MyerrorpageComponent } from './myerrorpage/myerrorpage.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
-    ContactusComponent
+    ContactusComponent,
+    LandingpageComponent,
+    MynavbarComponent,
+    MyerrorpageComponent
   ],
   imports: [
     BrowserModule,
