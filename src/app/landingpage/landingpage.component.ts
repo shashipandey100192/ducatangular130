@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class LandingpageComponent {
 
+a:number=500;
+b:string ="kumar";
+t:string="center";
+cond:boolean=false
 }
