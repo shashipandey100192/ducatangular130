@@ -11,4 +11,9 @@ a:number=500;
 b:string ="kumar";
 t:string="center";
 cond:boolean=false
+mytext:string="use of angular pipes";
+
+myd:any = new Date();
+
+
 }
