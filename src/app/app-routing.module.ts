@@ -4,6 +4,7 @@ import { LandingpageComponent } from './landingpage/landingpage.component';
 import { AboutComponent } from './about/about.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { MyerrorpageComponent } from './myerrorpage/myerrorpage.component';
+import { UserformComponent } from './userform/userform.component';
 
 const routes: Routes = [
 {
@@ -17,6 +18,10 @@ const routes: Routes = [
 {
   path:'contact',
   component:ContactusComponent
+},
+{
+  path:'myform',
+  component:UserformComponent
 },
 {
   path:'**',

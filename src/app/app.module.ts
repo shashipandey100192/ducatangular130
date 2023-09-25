@@ -10,6 +10,7 @@ import {MatButtonModule} from '@angular/material/button';
 import { LandingpageComponent } from './landingpage/landingpage.component';
 import { MynavbarComponent } from './mynavbar/mynavbar.component';
 import { MyerrorpageComponent } from './myerrorpage/myerrorpage.component';
+import { UserformComponent } from './userform/userform.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { MyerrorpageComponent } from './myerrorpage/myerrorpage.component';
     ContactusComponent,
     LandingpageComponent,
     MynavbarComponent,
-    MyerrorpageComponent
+    MyerrorpageComponent,
+    UserformComponent
   ],
   imports: [
     BrowserModule,
