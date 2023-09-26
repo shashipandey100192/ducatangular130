@@ -11,6 +11,8 @@ import { LandingpageComponent } from './landingpage/landingpage.component';
 import { MynavbarComponent } from './mynavbar/mynavbar.component';
 import { MyerrorpageComponent } from './myerrorpage/myerrorpage.component';
 import { UserformComponent } from './userform/userform.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { UserformComponent } from './userform/userform.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatButtonModule
+    MatButtonModule,
+    ReactiveFormsModule,
+    FormsModule
 
   ],
   providers: [],
