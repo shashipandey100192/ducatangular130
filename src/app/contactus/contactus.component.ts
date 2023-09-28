@@ -9,4 +9,10 @@ export class ContactusComponent {
 a:boolean =true;
 b:number = 80;
 c:string ="kumar1";
+fsize:number=100;
+
+kumar:string="ss";
+
 }
+
+

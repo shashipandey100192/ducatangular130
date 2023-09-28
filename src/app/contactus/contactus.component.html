@@ -4,3 +4,19 @@
 <h1 *ngIf="a">this is heading</h1>
 <h1 *ngIf="b>60">this is heading this is number based conditon</h1>
 <h1 *ngIf="c=='kumar'">this is heading this is number based conditon</h1>
+
+
+<h1 [ngStyle]="{'color':'red','font-size':'80px'}">use of angular style</h1>
+<h1 [ngStyle]="{'color':'red',fontSize:'80px'}">use of angular style using js</h1>
+<h1 [ngStyle]="{'color':'red',fontSize:fsize+'px'}">use of angular style using variable</h1>
+
+<h1 class="first">use of angular style</h1>
+<h1 [ngClass]="'first'">use of angular class using ngclass</h1>
+<h1 [ngClass]="['first','second']">use of angular class using ngclass</h1>
+
+
+<input type="text" [(ngModel)]="kumar">
+
+
+{{kumar}}
+
