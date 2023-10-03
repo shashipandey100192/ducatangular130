@@ -15,8 +15,74 @@
 <h1 [ngClass]="['first','second']">use of angular class using ngclass</h1>
 
 
-<input type="text" [(ngModel)]="kumar">
-
-
+<input type="text" [(ngModel)]="kumar" >
 {{kumar}}
+<h1> angular switch case </h1>
+
+<select [ngClass]="'form-control'" [(ngModel)]="myselect">
+    <option>home</option>
+    <option>about</option>
+    <option>contact</option>
+    <option>service</option>
+    <option>form</option>
+</select>
+<div [ngSwitch]="myselect" [ngClass]="'blogs'">
+    <section *ngSwitchCase="'home'">this is first</section>
+    <section *ngSwitchCase="'about'">this is second</section>
+    <section *ngSwitchCase="'contact'">this is third</section>
+    <section *ngSwitchCase="'form'">this is fourth</section>
+    <section *ngSwitchCase="'service'">this is fifth</section>
+    <section *ngSwitchDefault="">this is default condition</section>
+</div>
+<h1>template binding / data binding</h1>
+    <ul>
+        <li *ngFor="let a of mydata"> name of list : {{a.name}}</li>
+    </ul>
+    <select>
+        <option *ngFor="let a of mydata">{{a.email}}</option>
+    </select>
+    <select>
+        <option *ngFor="let a of mydata">{{a.phone}}</option>
+    </select>
+    <select>
+        <option *ngFor="let a of mydata">{{a.age}}</option>
+    </select>
+    <select>
+        <option *ngFor="let a of mydata">{{a.name}}</option>
+    </select>
+
+
+    <form [formGroup]="mybinddata" (ngSubmit)="myformsubmit()">
+<div [ngClass]="'container'">
+    <div [ngClass]="'row'">
+        <div [ngClass]="['col-md-3']">
+            <select [ngClass]="['form-control']" formControlName="username">
+                <option *ngFor="let a of mydata">{{a.name}}</option>
+            </select>
+        </div>
+        <div [ngClass]="['col-md-3']">
+            <select [ngClass]="['form-control']" formControlName="useremail">
+                <option *ngFor="let a of mydata">{{a.email}}</option>
+            </select>
+        </div>
+        <div [ngClass]="['col-md-3']">
+            <select [ngClass]="['form-control']" formControlName="userphone">
+                <option *ngFor="let a of mydata">{{a.phone}}</option>
+            </select>
+        </div>
+        <div [ngClass]="['col-md-3']">
+            <select [ngClass]="['form-control']" formControlName="userage">
+                <option *ngFor="let a of mydata">{{a.age}}</option>
+            </select>
+        </div>
+        <div [ngClass]="['col-md-12']">
+            <button type="submit" [ngClass]="['btn','btn-primary']">submit</button>
+        </div>
+    </div>
+</div>
+</form>
+
+
+
+
 

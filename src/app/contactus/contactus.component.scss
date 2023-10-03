@@ -9,3 +9,17 @@
     line-height: 100px;
     font-weight: bold;
 }
+
+.blogs
+{
+    width:1200px;
+    height: 500px;
+    background-color: azure;
+    border:1px solid red;
+}
+.blogs>section
+{
+    background-color: aquamarine;
+    padding:10px;
+    font-size: 30px;
+}
