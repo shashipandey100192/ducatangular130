@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
 import { MynavbarComponent } from './mynavbar/mynavbar.component';
-import { UserformComponent } from './userform/userform.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 import { FullComponent } from './modules/layouts/full/full.component';
@@ -16,7 +15,6 @@ import { BlankComponent } from './modules/layouts/blank/blank.component';
   declarations: [
     AppComponent,
     MynavbarComponent,
-    UserformComponent,
     FullComponent,
     BlankComponent
   ],
