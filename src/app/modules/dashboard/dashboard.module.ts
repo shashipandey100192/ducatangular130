@@ -5,13 +5,17 @@ import { DashboardRoutingModule } from './dashboard-routing.module';
 import { LandingpageComponent } from './landingpage/landingpage.component';
 
 
+
+
+
 @NgModule({
   declarations: [
-    LandingpageComponent
+    LandingpageComponent,
+  
   ],
   imports: [
     CommonModule,
-    DashboardRoutingModule
+    DashboardRoutingModule,
   ]
 })
 export class DashboardModule { }
