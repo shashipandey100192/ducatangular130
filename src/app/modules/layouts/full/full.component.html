@@ -1,2 +1,24 @@
 
-<router-outlet></router-outlet>
+<div [className]="['container-fluid']">
+    <div [className]="['row fixed-top']">
+        <div [className]="['col-12']">
+           <app-mynavbar></app-mynavbar>
+        </div>
+    </div>
+    <div [className]="['row cus-nav-h']">
+        <div [className]="['col-md-2 g-0 border']">
+            <app-mysidebar></app-mysidebar>
+        </div>
+        <div [className]="['col-md-10']">
+            <div class="border mypage">
+            <router-outlet></router-outlet>
+          
+        </div>
+        </div>
+    </div>
+    <div [className]="['row']">
+        <div [className]="['col-12 g-0']">
+           <app-myfooter></app-myfooter>
+        </div>
+    </div>
+</div>
