@@ -14,46 +14,41 @@ ngOnInit(): void {
 }
 abc()
 {
-  alert("hi");
+  // alert("hi");
 }
 
 
 mydata:any[] = [
 {
-  cardtitle:'cardname',
-  height:'100px',
-  bgc:'red'
+  name:'kumar',
+  age:50,
+  email:'kumar@gmail.com',
+  phone:'54548457',
+  course:'mean full stack',
+  location:'noida up',
+  fees:8745,
+  status:'paid'
 },
 {
-  cardtitle:'cardname',
-  height:'100px',
-  bgc:'red'
+  name:'Ramesh',
+  age:50,
+  email:'kumar@gmail.com',
+  phone:'54548457',
+  course:'mean full stack',
+  location:'noida up',
+  fees:9000,
+  status:'paid'
 },
 {
-  cardtitle:'cardname',
-  height:'100px',
-  bgc:'red'
+  name:'mohan',
+  age:20,
+  email:'mohan@gmail.com',
+  phone:'54548457',
+  course:'php full stack',
+  location:'new delhi',
+  fees:0,
+  status:'paid'
 },
-{
-  cardtitle:'cardname',
-  height:'100px',
-  bgc:'red'
-},
-{
-  cardtitle:'cardname',
-  height:'100px',
-  bgc:'red'
-},
-{
-  cardtitle:'cardname',
-  height:'100px',
-  bgc:'red'
-},
-{
-  cardtitle:'cardname',
-  height:'100px',
-  bgc:'red'
-}
 ];
 
 }

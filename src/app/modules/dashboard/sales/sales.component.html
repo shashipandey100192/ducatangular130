@@ -1,1 +1,28 @@
-<p>sales works!</p>
+
+<ul *ngFor="let a of mydata" >
+    <li>{{a.name==='mohan' ? a.name : a.status}}</li>
+    <li>{{a.age}}</li>
+    <li>{{a.email}}</li>
+    <li>{{a.phone}}</li>
+    <li>{{a.course}}</li>
+    <li>{{a.location}}</li>
+    <li>{{a.fees===0 ? a.status : a.fees | currency:'INR'}}</li>
+</ul>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4" *ngFor="let a of mydata">
+        
+            <div class="card border bg-dark text-white shadow m-3">
+                <div class="card-body">
+                  <h2 class="h2 mb-0">Name: {{a.name | uppercase}}</h2>
+                  <h4 class="card-text mb-0 ">Course: {{a.course}}</h4>
+                  <h4 class="card-text mb-0">Email Id: {{a.email}}</h4>
+                  <h4 class="card-text mb-0">Phone No: {{a.phone}}</h4>
+                  <h4 class="card-text mb-0">Location: {{a.location}}</h4>
+                  <h4 class="card-text mb-0">Fees: {{a.fees | currency:'INR'}}</h4>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
