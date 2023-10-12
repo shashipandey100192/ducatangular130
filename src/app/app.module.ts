@@ -12,6 +12,7 @@ import { BlankComponent } from './modules/layouts/blank/blank.component';
 import { MysidebarComponent } from './modules/shares/mysidebar/mysidebar.component';
 import { MyfooterComponent } from './modules/shares/myfooter/myfooter.component';
 import { MynavbarComponent } from './modules/shares/mynavbar/mynavbar.component';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { MynavbarComponent } from './modules/shares/mynavbar/mynavbar.component'
     BrowserAnimationsModule,
     MatButtonModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
 
   ],
   providers: [],

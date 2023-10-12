@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { DashboardRoutingModule } from './dashboard-routing.module';
 import { LandingpageComponent } from './landingpage/landingpage.component';
 import { SalesComponent } from './sales/sales.component';
+import { ApicomponentComponent } from './apicomponent/apicomponent.component';
 
 
 
@@ -13,6 +14,7 @@ import { SalesComponent } from './sales/sales.component';
   declarations: [
     LandingpageComponent,
     SalesComponent,
+    ApicomponentComponent,
   ],
   imports: [
     CommonModule,

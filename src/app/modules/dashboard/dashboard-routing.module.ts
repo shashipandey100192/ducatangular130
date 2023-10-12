@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LandingpageComponent } from './landingpage/landingpage.component';
 import { SalesComponent } from './sales/sales.component';
+import { ApicomponentComponent } from './apicomponent/apicomponent.component';
 
 
 const routes: Routes = [
@@ -12,6 +13,10 @@ const routes: Routes = [
   {
     path:'sales',
     component:SalesComponent
+  },
+  {
+    path:'api',
+    component:ApicomponentComponent
   }
 ];
 
