@@ -5,7 +5,8 @@ import { DashboardRoutingModule } from './dashboard-routing.module';
 import { LandingpageComponent } from './landingpage/landingpage.component';
 import { SalesComponent } from './sales/sales.component';
 import { ApicomponentComponent } from './apicomponent/apicomponent.component';
-
+import { MydatatableComponent } from './mydatatable/mydatatable.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 
 
@@ -14,11 +15,12 @@ import { ApicomponentComponent } from './apicomponent/apicomponent.component';
   declarations: [
     LandingpageComponent,
     SalesComponent,
-    ApicomponentComponent,
+    ApicomponentComponent
   ],
   imports: [
     CommonModule,
     DashboardRoutingModule,
-  ]
+    MatFormFieldModule
+  ],
 })
 export class DashboardModule { }
