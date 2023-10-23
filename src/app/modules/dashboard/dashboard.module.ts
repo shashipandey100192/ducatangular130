@@ -8,6 +8,8 @@ import { ApicomponentComponent } from './apicomponent/apicomponent.component';
 import { MydatatableComponent } from './mydatatable/mydatatable.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatTableModule} from '@angular/material/table';
+import { NgFor } from '@angular/common';
+import { MylocalComponent } from './mylocal/mylocal.component';
 
 
 
@@ -15,15 +17,16 @@ import {MatTableModule} from '@angular/material/table';
   declarations: [
     LandingpageComponent,
     SalesComponent,
-    ApicomponentComponent,
+    MylocalComponent,
+    
   ],
   imports: [
     CommonModule,
     DashboardRoutingModule,
     MatFormFieldModule,
     MatTableModule,
-    
-    
+    ApicomponentComponent,
+    NgFor
   ],
 })
 export class DashboardModule { }

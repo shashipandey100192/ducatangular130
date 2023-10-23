@@ -7,6 +7,8 @@ import { FormGroup,FormControl,Validators } from '@angular/forms';
   styleUrls: ['./registorpage.component.scss']
 })
 export class RegistorpageComponent {
+myarray:any[]=[];
+
   myform = new FormGroup({
     fullname: new FormControl("name",[Validators.required,Validators.minLength(5),Validators.maxLength(10)]),
     email:new FormControl("email",[Validators.required]),
@@ -24,6 +26,9 @@ mysubmitform()
   {
     alert("welcome");
     console.log(this.myform.value);
+    // localStorage.setItem("mydata",JSON.stringify(this.myform.value));
+    this.myarray.push(this.myform.value);
+    localStorage.setItem("mydata",JSON.stringify(this.myarray));
   }
   else
   {

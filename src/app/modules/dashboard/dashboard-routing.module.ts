@@ -4,6 +4,7 @@ import { LandingpageComponent } from './landingpage/landingpage.component';
 import { SalesComponent } from './sales/sales.component';
 import { ApicomponentComponent } from './apicomponent/apicomponent.component';
 import { MydatatableComponent } from './mydatatable/mydatatable.component';
+import { MylocalComponent } from './mylocal/mylocal.component';
 
 
 const routes: Routes = [
@@ -22,6 +23,10 @@ const routes: Routes = [
   {
     path:'datatable',
     component:MydatatableComponent
+  },
+  {
+    path:'localdata',
+    component:MylocalComponent
   }
 ];
 
