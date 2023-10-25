@@ -5,6 +5,7 @@ import { SalesComponent } from './sales/sales.component';
 import { ApicomponentComponent } from './apicomponent/apicomponent.component';
 import { MydatatableComponent } from './mydatatable/mydatatable.component';
 import { MylocalComponent } from './mylocal/mylocal.component';
+import { ParentComponent } from './parent/parent.component';
 
 
 const routes: Routes = [
@@ -27,6 +28,10 @@ const routes: Routes = [
   {
     path:'localdata',
     component:MylocalComponent
+  },
+  {
+    path:'parents',
+    component:ParentComponent
   }
 ];
 

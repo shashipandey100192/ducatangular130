@@ -10,6 +10,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatTableModule} from '@angular/material/table';
 import { NgFor } from '@angular/common';
 import { MylocalComponent } from './mylocal/mylocal.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
 
 
 
@@ -18,6 +20,8 @@ import { MylocalComponent } from './mylocal/mylocal.component';
     LandingpageComponent,
     SalesComponent,
     MylocalComponent,
+    ParentComponent,
+    ChildComponent,
     
   ],
   imports: [

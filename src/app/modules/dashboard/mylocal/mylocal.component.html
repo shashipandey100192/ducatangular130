@@ -1,1 +1,24 @@
-<p>mylocal works!</p>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">sno</th>
+        <th scope="col">fullname</th>
+        <th scope="col">email id</th>
+        <th scope="col">Phone no</th>
+        <th scope="col">gender</th>
+        <th scope="col">Remark</th>
+        <th scope="col">Password</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let a of mydata; index as i">
+        <th scope="row">{{i}}</th>
+        <td>{{a.fullname}}</td>
+        <td>{{a.email}}</td>
+        <td>{{a.phone}}</td>
+        <td>{{a.gender}}</td>
+        <td>{{a.remark}}</td>
+        <td>{{a.pass}}</td>
+      </tr>
+    </tbody>
+  </table>

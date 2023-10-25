@@ -7,6 +7,7 @@ import { Component ,OnInit} from '@angular/core';
 })
 export class MylocalComponent implements OnInit {
 mylocadata:any;
+mydata:any;
 
 ngOnInit(): void {
     
@@ -17,7 +18,8 @@ this.mylocal();
 mylocal():void{
 
   this.mylocadata = localStorage.getItem('mydata');
-  console.log(JSON.parse(this.mylocadata));
+  this.mydata = JSON.parse(this.mylocadata);
+ console.log(this.mydata);
 
 }
 
