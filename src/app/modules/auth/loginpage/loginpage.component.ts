@@ -24,7 +24,10 @@ mylogin()
     this.goToItems();
     
   }
+  else{
+  alert("wrong user and password");
   console.log(this.loginform.value);
+  }
 }
 
 

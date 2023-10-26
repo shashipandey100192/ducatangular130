@@ -11,6 +11,10 @@ const routes: Routes = [
   {
     path:'registor',
     component:RegistorpageComponent
+  },
+  {
+    path:'login',
+    component:LoginpageComponent
   }
 ];
 

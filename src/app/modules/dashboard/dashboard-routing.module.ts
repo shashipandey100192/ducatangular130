@@ -6,6 +6,7 @@ import { ApicomponentComponent } from './apicomponent/apicomponent.component';
 import { MydatatableComponent } from './mydatatable/mydatatable.component';
 import { MylocalComponent } from './mylocal/mylocal.component';
 import { ParentComponent } from './parent/parent.component';
+import { ViewdetailsComponent } from './viewdetails/viewdetails.component';
 
 
 const routes: Routes = [
@@ -32,6 +33,10 @@ const routes: Routes = [
   {
     path:'parents',
     component:ParentComponent
+  },
+  {
+    path:'api/:id',
+    component:ViewdetailsComponent
   }
 ];
 

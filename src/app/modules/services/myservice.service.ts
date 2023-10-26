@@ -9,10 +9,16 @@ export class MyserviceService {
   constructor(private http:HttpClient) { }
 
 path = "https://meanapps.onrender.com/getdata";
+path1 = "https://meanapps.onrender.com/view";
 
 myalldata()
 {
   return this.http.get(this.path);
+}
+
+singleuser()
+{
+  return this.http.get(this.path1+"/");
 }
 
 

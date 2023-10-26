@@ -29,6 +29,7 @@ mysubmitform()
     // localStorage.setItem("mydata",JSON.stringify(this.myform.value));
     this.myarray.push(this.myform.value);
     localStorage.setItem("mydata",JSON.stringify(this.myarray));
+    window.location.href="http://localhost:4200/auth/login";
   }
   else
   {
