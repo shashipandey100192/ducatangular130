@@ -2,10 +2,12 @@
     <section>
         <h1>parent works!</h1>
         <p>{{first}}</p>
+        {{mydata}}
     </section>
     <section>
         <h1>this is child element</h1>
-        <app-child [xyz]="first" [mysta]="mystatus"></app-child>
+        <!-- <app-child [xyz]="first" [mysta]="mystatus"></app-child> -->
+        <app-child [xyz]="a" [mysta]="mystatus" (mydataup)="($event)"></app-child>
     </section>
 </div>
 

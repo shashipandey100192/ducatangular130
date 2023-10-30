@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input,Output,EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-child',
@@ -7,6 +7,15 @@ import { Component, Input } from '@angular/core';
 })
 export class ChildComponent {
 @Input() xyz:any;
-@Input() mysta:boolean | undefined
+@Input() mysta:boolean | undefined;
+@Output() mydata = new EventEmitter<string>();
+
+
+mydataup()
+{
+  this.mydata.emit("this is output data");
+
+}
+
 
 }

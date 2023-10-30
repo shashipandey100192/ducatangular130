@@ -1,3 +1,7 @@
 <p>child works!</p>
-{{xyz}}
+
+   <select>
+    <option *ngFor="let b of xyz">{{b}}</option>
+   </select> 
+<input type="button" (click)="mydataup()" value="passdata to child">
 {{mysta}}
