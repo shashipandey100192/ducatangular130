@@ -8,7 +8,7 @@ import { Component, Input,Output,EventEmitter } from '@angular/core';
 export class ChildComponent {
 @Input() xyz:any;
 @Input() mysta:boolean | undefined;
-@Output() mydata = new EventEmitter<string>();
+@Output() public mydata = new EventEmitter();
 
 
 mydataup()
