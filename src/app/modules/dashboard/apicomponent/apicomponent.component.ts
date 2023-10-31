@@ -37,6 +37,7 @@ mydatalist:any;
 
 ngOnInit(): void {
   this.mydata();    
+ 
 }
 
 

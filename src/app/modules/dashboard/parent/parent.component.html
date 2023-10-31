@@ -2,7 +2,18 @@
     <section>
         <h1>parent works!</h1>
         <p>{{first}}</p>
-        {{mydataup}}
+        <!-- <select>
+            <option *ngFor="let a of mydataup">{{a}}</option>
+        </select> -->
+        <select>
+            <option *ngFor="let a of mydataup">{{a.name}}</option>
+        </select>
+        <select>
+            <option *ngFor="let a of mydataup">{{a.age}}</option>
+        </select>
+        <select>
+            <option *ngFor="let a of mydataup">{{a.course}}</option>
+        </select>
     </section>
     <section>
         <h1>this is child element</h1>

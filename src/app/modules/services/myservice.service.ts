@@ -16,9 +16,10 @@ myalldata()
   return this.http.get(this.path);
 }
 
-singleuser()
+singleuser(id:any)
 {
-  return this.http.get(this.path1+"/");
+
+  return this.http.get(this.path1+"/"+id);
 }
 
 
