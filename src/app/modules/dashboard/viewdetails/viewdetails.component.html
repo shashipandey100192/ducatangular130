@@ -1,6 +1,18 @@
-<p>viewdetails works!</p>
-<h2>{{single._id}}</h2>
-<h2>{{single.Item}}</h2>
-<h2>{{single.Region}}</h2>
-<h2>{{single.Rep}}</h2>
-<h2>{{single.Cost}}</h2>
+
+
+
+<div class="container-fluid p-2">
+    <div class="row">
+        <div class="col-9"><h2>View Details page</h2></div>
+        <div class="col-3 text-end"><button type="button" class="btn btn-sm btn-dark me-3" [routerLink]="['/dashboard/api']">Back</button></div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <h2>{{single._id}}</h2>
+            <h2>{{single.Item}}</h2>
+            <h2>{{single.Region}}</h2>
+            <h2>{{single.Rep}}</h2>
+            <h2>{{single.Cost}}</h2>
+        </div>
+    </div>
+</div>
